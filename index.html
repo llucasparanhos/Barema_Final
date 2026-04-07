@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doçuras da Eli | Confeitaria Artesanal</title>
+    <!-- Uso de CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Uso da Tag semântica header -->
+    <header>
+        <!-- Uso da tag semântica nav -->
+        <nav>
+            <div class="logo"> Doçuras da Eli</div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+        </nav>
+    </header>
+    <!-- Uso da Tag semântica main -->
+    <main>
+        <!-- Uso da tag semântica section -->
+        <section id="inicio">
+            <div class="inicio-container"> <h1>Bolos feitos com amor</h1>
+                <div class="grid-confeitaria">
+                    <h3>Confeitaria artesanal em Salvador.</h3>
+                    <img src="https://images.unsplash.com/photo-1586985289906-406988974504?w=700&q=80" alt="Foto de uma torta">
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <h2>Nossas Delícias</h2>
+            <div class="grid-produtos">
+                <!-- Uso da Tag semântica article -->
+                <article>
+                    <h3>Bolo de Chocolate</h3>
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Bolo de Chocolate">
+                    
+                    <p><strong>R$ 85,00</strong></p>
+                </article>
+                <article>
+                    <h3>Naked Cake de Frutas</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPDOY5YwPOONKw1Tdf9nxJG0v5-YM94-Szw&s" alt="Naked de Fruts">
+                    <p>A partir de <strong>R$ 120,00</strong></p>
+                </article>
+                <article>
+                    <h3 class="produto-nome">Caixa de Brigadeiros</h3>
+                    <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?w=500&q=80" alt="Caixa de chocolate">
+                    <p class="produto-preco">A partir de <strong>R$ 45,00</strong></p>
+                </article>
+            </div>
+        </section>
+
+        
+
+        <section id="sobre">
+            <h1>Sobre nós</h1>
+            <div class="sobre-container">
+                <div class="sobre-imagem">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="pessoal cozinhando">
+                </div>
+                <div class="sobre-texto">
+                    
+                    <h1>Feito com as mãos, entregue com o coração</h1>
+                    <p>A Doçuras da Eli nasceu da paixão por transformar ingredientes simples em momentos inesquecíveis.</p>
+                    <p>Trabalhamos com uma linha completa de confeitaria artesanal em Salvador, focando sempre na qualidade e no sabor que lembra casa.
+                    </p>
+                    <ul class="sobre-lista" role="list">
+                        <li> Ingredientes frescos e selecionados</li>
+                        <li> Personalização completa</li>
+                        <li> Entrega em toda Salvador</li>
+                        <li> CNPJ ativo — Nota Fiscal disponível</li>
+                    </ul>
+                </div class="sobre-texto">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Faça sua Encomenda</h2>
+            <form action="salvar_pedido.php" method="POST">
+                <table class="tabela-encomenda">
+                    <tr>
+                        <td><label for="nome">Nome:</label></td>
+                        <td><input type="text" id="nome" name="nome" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telefone:</label></td>
+                        <td><input type="tel" id="tel" name="tel" placeholder="(71) 99999-9999" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pedido">Pedido:</label></td>
+                        <td><textarea id="pedido" name="pedido" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">Enviar Encomenda </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Salvador, BA</p>
+        <p>&copy; 2026 Doçuras da Eli - Todos os direitos reservados</p>
+    </footer>
+    <!-- Sripct chamado no final do código -->
+    <script src="script.js"></script> </body>
+</body>
+</html>

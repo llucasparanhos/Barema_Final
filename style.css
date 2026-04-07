@@ -1,0 +1,236 @@
+.logo {
+    background-color: #c9614a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Centralização Geral das Seções */
+#inicio, #sobre, #cardapio, #contato {
+    max-width: 1100px; /* Mesma largura do nav e grid-produtos */
+    margin: 0 auto;    /* Centraliza a seção na página */
+    padding: 60px 20px;
+}
+
+/* Ajuste específico para o Início */
+.inicio-container {
+    text-align: center;
+}
+
+.grid-confeitaria img {
+    width: 100%;
+    max-width: 400px; /* Evita que a imagem do topo fique gigante */
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Ajuste no Sobre (que você já tinha, mas agora com limites) */
+.sobre-container {
+    display: flex;
+    align-items: center; 
+    gap: 40px;        
+    margin-top: 30px;
+}
+
+body {
+    background-color: #fdf6ee;
+    color: #2b1a0e;
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff8f0;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e8d8cc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b1a0e;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #c9614a;
+    text-align: center;
+}
+
+/* Container que segura os produtos */
+.grid-produtos {
+    display: grid;
+    /* Cria 3 colunas de tamanhos iguais */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada card de produto */
+article {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: left;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px); 
+}
+
+article img {
+    width: 100%;        
+    height: 250px;     
+    object-fit: cover;   /* Corta a imagem sem distorcer para caber no espaço */
+    display: block;
+}
+
+
+article h3, article p {
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+article p strong {
+    color: #c9614a;   
+    font-size: 1.2rem;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center; 
+    gap: 40px;        
+    margin-top: 30px;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+.sobre-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-texto li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #7a5c45;
+}
+
+.tabela-encomenda {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.tabela-encomenda td {
+    padding: 5px;
+}
+
+.tabela-encomenda label {
+    font-weight: bold;
+    color: #7a5c45;
+}
+
+.tabela-encomenda input, 
+.tabela-encomenda textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e8d8cc;
+    border-radius: 8px;
+    background-color: #fdf6ee;
+}
+
+button {
+    background-color: #c9614a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a64835;
+}
+
+footer {
+    background: var(--clr-text);
+    color: var(--clr-bg);
+    padding: 40px 48px;
+    text-align: center;
+}
+
+/* Mudanças no Javascript */
+
+/* Estilos para o Dark Mode */
+body.dark-mode {
+    background-color: #1a0f07; 
+    color: #f5e8d8;          
+}
+
+body.dark-mode header {
+    background-color: #231408;
+    border-bottom-color: #4a2e1e;
+}
+
+body.dark-mode article, 
+body.dark-mode .tabela-encomenda {
+    background-color: #2e1a0e;
+    color: #f5e8d8;
+}
+
+body.dark-mode nav a {
+    color: #f5e8d8;
+}
